@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1215,1342" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ss="clr-namespace:System.Security;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:umab="clr-namespace:UiPath.Mail.Activities.Business;assembly=UiPath.Mail.Activities" xmlns:umabh="clr-namespace:UiPath.Mail.Activities.Business.HtmlEditor;assembly=UiPath.Mail.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="947,838" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ss="clr-namespace:System.Security;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:umab="clr-namespace:UiPath.Mail.Activities.Business;assembly=UiPath.Mail.Activities" xmlns:umabh="clr-namespace:UiPath.Mail.Activities.Business.HtmlEditor;assembly=UiPath.Mail.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -129,7 +129,7 @@
       <AssemblyReference>System.Text.RegularExpressions</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="558,1277" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="512,307" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="dtOfficedepot" />
       <Variable x:TypeArguments="x:String" Name="ProductCode" />
@@ -144,7 +144,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:ReadRange AddHeaders="True" DataTable="[dtOfficedepot]" DisplayName="데이터 가져오기 | Read Range Workbook" sap:VirtualizedContainerService.HintSize="496,57" sap2010:WorkflowViewState.IdRef="ReadRange_1" Range="A1" SheetName="오피스디포" WorkbookPath="Data\작업지시서_20240509.xlsx">
+    <ui:ReadRange AddHeaders="True" DataTable="[dtOfficedepot]" DisplayName="데이터 가져오기 | Read Range Workbook" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="ReadRange_1" Range="A1" SheetName="오피스디포" WorkbookPath="Data\작업지시서_20240509.xlsx">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -152,7 +152,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:ReadRange>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="메인페이지에서 작업 | Use Browser Chrome: 오피스디포 공식쇼핑몰" sap:VirtualizedContainerService.HintSize="496,57" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="468a83ac-ee01-4c38-b965-d630242d089d" Version="V2" WindowResize="Maximize">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="메인페이지에서 작업 | Use Browser Chrome: 오피스디포 공식쇼핑몰" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="468a83ac-ee01-4c38-b965-d630242d089d" Version="V2" WindowResize="Maximize">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
@@ -291,7 +291,7 @@
                           </Sequence>
                         </uix:NCheckState.IfExists>
                         <uix:NCheckState.IfNotExists>
-                          <Sequence DisplayName="타겟이 나타나지 않음" sap:VirtualizedContainerService.HintSize="450,520" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                          <Sequence DisplayName="타겟이 나타나지 않음" sap:VirtualizedContainerService.HintSize="450,518" sap2010:WorkflowViewState.IdRef="Sequence_5">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -447,7 +447,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </uix:NApplicationCard>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="견적서 다운로드 | Use Browser Chrome: 오피스디포 공식쇼핑몰" sap:VirtualizedContainerService.HintSize="496,57" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="94f074c6-5fdd-44e9-8d31-2a511a0d1552" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="견적서 다운로드 | Use Browser Chrome: 오피스디포 공식쇼핑몰" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="94f074c6-5fdd-44e9-8d31-2a511a0d1552" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
@@ -506,10 +506,10 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </uix:NApplicationCard>
-    <Sequence DisplayName="메일 발송 | Sequence" sap:VirtualizedContainerService.HintSize="496,1018" sap2010:WorkflowViewState.IdRef="Sequence_6">
+    <Sequence DisplayName="메일 발송 | Sequence" sap:VirtualizedContainerService.HintSize="496,1026" sap2010:WorkflowViewState.IdRef="Sequence_6">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
@@ -538,22 +538,29 @@
         </Assign.Value>
       </Assign>
       <ui:GetRobotCredential TimeoutMS="{x:Null}" AssetName="UiPath_Gmail" CacheStrategy="None" DisplayName="Get Credential" FolderPath="baeeura94@gmail.com's workspace" sap:VirtualizedContainerService.HintSize="434,175" sap2010:WorkflowViewState.IdRef="GetRobotCredential_1" Password="[strPW]" Username="[strEmail]" />
-      <umab:CreateHtmlContent DisplayName="Create HTML Content" sap:VirtualizedContainerService.HintSize="434,184" HtmlContent="[htmlContents]" sap2010:WorkflowViewState.IdRef="CreateHtmlContent_1">
+      <umab:CreateHtmlContent sap2010:Annotation.AnnotationText="편집기에서 데이터 추가로 변수값 사용 가능" DisplayName="Create HTML Content" sap:VirtualizedContainerService.HintSize="434,215" HtmlContent="[htmlContents]" sap2010:WorkflowViewState.IdRef="CreateHtmlContent_1">
         <umab:CreateHtmlContent.HtmlContentArg>
-          <umabh:HtmlContentArgument FilePath="{x:Null}" HtmlBody="&lt;HTML&gt;&lt;HEAD&gt;&#xA;&lt;STYLE type=text/css&gt;&#xA;        body {&#xA;            font-family: Calibri;&#xA;        }&#xA;&#xA;        p {&#xA;            margin: 0;&#xA;        }&#xA;&#xA;        .mapping {&#xA;            background-color: #D3D4D7;&#xA;            color: black;&#xA;            padding: 1px;&#xA;        }&#xA;    &lt;/STYLE&gt;&#xA;&lt;!-- Instruct the web browser control to use IE 6 to render the page. --&gt;&#xA;&lt;META content=IE=6 http-equiv=X-UA-Compatible&gt;&lt;/HEAD&gt;&#xA;&lt;BODY&gt;&amp;lt;div&amp;gt;&lt;BR&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;lt;span&amp;gt;안녕하세요&amp;lt;/span&amp;gt;&lt;BR&gt;&amp;lt;/div&amp;gt;&lt;BR&gt;&amp;lt;div&amp;gt;&lt;BR&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;lt;span&amp;gt;&amp;lt;br&amp;gt;&amp;lt;/span&amp;gt;&lt;BR&gt;&amp;lt;/div&amp;gt;&lt;BR&gt;&amp;lt;div&amp;gt;&lt;BR&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;lt;span&amp;gt;{0} 오피스디포 견적서 송부드립니다. &amp;lt;/span&amp;gt;&lt;BR&gt;&amp;lt;div&amp;gt;&lt;BR&gt;&amp;lt;div&amp;gt;&lt;BR&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;lt;span&amp;gt;&amp;lt;br&amp;gt;&amp;lt;/span&amp;gt;&lt;BR&gt;&amp;lt;/div&amp;gt;&lt;BR&gt;&amp;lt;div&amp;gt;&lt;BR&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;lt;span&amp;gt;감사합니다.&amp;lt;/span&amp;gt;&lt;BR&gt;&amp;lt;/div&amp;gt;&lt;/BODY&gt;&lt;/HTML&gt;">
+          <umabh:HtmlContentArgument FilePath="{x:Null}" HtmlBody="&lt;HTML&gt;&lt;HEAD&gt;&#xD;&#xA;&lt;STYLE type=text/css&gt;&#xA;        body {&#xA;            font-family: Calibri;&#xA;        }&#xA;&#xA;        p {&#xA;            margin: 0;&#xA;        }&#xA;&#xA;        .mapping {&#xA;            background-color: #D3D4D7;&#xA;            color: black;&#xA;            padding: 1px;&#xA;        }&#xA;    &lt;/STYLE&gt;&#xD;&#xA;&lt;!-- Instruct the web browser control to use IE 6 to render the page. --&gt;&#xD;&#xA;&lt;META content=IE=6 http-equiv=X-UA-Compatible&gt;&lt;/HEAD&gt;&#xD;&#xA;&lt;BODY&gt;&#xD;&#xA;&lt;P&gt;안녕하세요.&lt;/P&gt;&#xD;&#xA;&lt;P&gt;&lt;BR&gt;&lt;SPAN class=mapping contentEditable=false&gt;{{ㅇ}}&lt;/SPAN&gt;오피스디포 견적서 송부드립니다.&lt;/P&gt;&#xD;&#xA;&lt;P&gt;&lt;BR&gt;감사합니다.&lt;/P&gt;&lt;/BODY&gt;&lt;/HTML&gt;">
             <umabh:HtmlContentArgument.RuntimeImages>
               <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
             </umabh:HtmlContentArgument.RuntimeImages>
             <umabh:HtmlContentArgument.ValueMappings>
-              <scg:List x:TypeArguments="umabh:HtmlValueMappingBase" Capacity="0" />
+              <scg:List x:TypeArguments="umabh:HtmlValueMappingBase" Capacity="4">
+                <umabh:HtmlTextValueMapping Name="ㅇ" Value="[today.ToString(&quot;yyyy/MM/dd&quot;)]" />
+              </scg:List>
             </umabh:HtmlContentArgument.ValueMappings>
           </umabh:HtmlContentArgument>
         </umab:CreateHtmlContent.HtmlContentArg>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
       </umab:CreateHtmlContent>
-      <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" ContinueOnError="{x:Null}" Email="{x:Null}" From="{x:Null}" MailMessage="{x:Null}" Name="{x:Null}" Password="{x:Null}" ReplyTo="{x:Null}" Result="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" UseOAuth="{x:Null}" sap2010:Annotation.AnnotationText="&quot;rpa.sj.jeong@gmail.com&quot;" Body="[htmlContents]" DisplayName="Send SMTP Mail Message" EnableSSL="True" sap:VirtualizedContainerService.HintSize="434,206" sap2010:WorkflowViewState.IdRef="SendMail_1" IgnoreCRL="False" IsBodyHtml="True" Port="587" SecureConnection="Auto" Server="smtp.gmail.com" Subject="[FileNameDate + &quot;오피스디포 견적서&quot;]" To="medicine94@naver.com">
+      <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" ContinueOnError="{x:Null}" From="{x:Null}" MailMessage="{x:Null}" Name="{x:Null}" Password="{x:Null}" ReplyTo="{x:Null}" Result="{x:Null}" TimeoutMS="{x:Null}" UseOAuth="{x:Null}" sap2010:Annotation.AnnotationText="&quot;rpa.sj.jeong@gmail.com&quot;" Body="[htmlContents]" DisplayName="Send SMTP Mail Message" Email="[strEmail]" EnableSSL="True" sap:VirtualizedContainerService.HintSize="434,206" sap2010:WorkflowViewState.IdRef="SendMail_1" IgnoreCRL="False" IsBodyHtml="True" Port="587" SecureConnection="Auto" SecurePassword="[strPW]" Server="smtp.gmail.com" Subject="[FileNameDate + &quot;오피스디포 견적서&quot;]" To="rpa.sj.jeong@gmail.com">
         <ui:SendMail.Files>
           <scg:List x:TypeArguments="InArgument(x:String)" Capacity="4">
-            <InArgument x:TypeArguments="x:String">Data\오피스디포_견적서_240509.pdf</InArgument>
+            <InArgument x:TypeArguments="x:String">["Data\오피스디포_견적서" + Today.ToString("yyMMdd") + ".pdf"]</InArgument>
           </scg:List>
         </ui:SendMail.Files>
         <sap:WorkflowViewStateService.ViewState>
